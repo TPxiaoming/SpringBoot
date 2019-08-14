@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.xiaoming</groupId>
+    <artifactId>SpringBoot</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <!-- 1.创建一个 Maven 工程，选择jar类型项目
+         2.引入 SpringBoot Maven 依赖-->
+    <!-- Maven parent 目的，聚合工程、有继承关系 -->
+    <!-- Spring 目的：统一整合第三方框架依赖信息（Spring Boot 的依赖，不需要写版本号） -->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.0.2.RELEASE</version>
+    </parent>
+
+    <dependencies>
+        <!-- SpringBoot 整合Web组件即：组合SpringMvc 就会把传统方式的SpringMVC 依赖的 jar 全部给下载下来-->
+        <!--
+            引入 spring-boot-starter-web 会帮你整合好所有相关的依赖 jar 包
+            原理：maven 依赖传递
+        -->
+        <!-- spring-boot-starter-parent 中 整合了相关 jar 信息 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <!-- 引入freeMarker的依赖包. -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-freemarker</artifactId>
+        </dependency>
+
+
+    </dependencies>
+
+
+
+</project>
