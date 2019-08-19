@@ -1,0 +1,12 @@
+com\xiaoming\test02\mapper\UserMapperTest02.class
+com\xiaoming\controller\MybatisMutilDataSourceController.class
+com\xiaoming\entity\User.class
+com\xiaoming\mapper\UserMapper.class
+com\xiaoming\datasource\DataSource2Config.class
+com\xiaoming\datasource\DataSource1Config.class
+com\xiaoming\controller\UserController.class
+com\xiaoming\service\UserServcie.class
+com\xiaoming\test01\service\UserServcieTest01.class
+com\xiaoming\test02\service\UserServcieTest02.class
+com\xiaoming\test01\mapper\UserMapperTest01.class
+com\xiaoming\MyBaitsApp.class

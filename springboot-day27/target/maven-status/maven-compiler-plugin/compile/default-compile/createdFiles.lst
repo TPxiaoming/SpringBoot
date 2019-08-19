@@ -1,0 +1,8 @@
+com\xiaoming\controller\JspIndexController.class
+com\xiaoming\entity\User.class
+com\xiaoming\aop\WebLogAspect.class
+com\xiaoming\service\MemberService.class
+com\xiaoming\controller\MemberController.class
+com\xiaoming\JspApp.class
+com\xiaoming\controller\ErrorController.class
+com\xiaoming\error\GlobalExceptionHandler.class
