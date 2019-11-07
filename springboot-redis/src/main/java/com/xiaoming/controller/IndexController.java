@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * @author xiaoming
  * @Date 2019/10/29
+ * @blame Android Team
  */
 @RestController
 public class IndexController {
