@@ -1,10 +1,15 @@
 package com.xiaoming.entity;
 
+import java.io.Serializable;
+
 /**
  * @author xiaoming
  * @Date 2019/11/7
+ * @blame Android Team
  */
-public class Users {
+public class Users implements Serializable {
+
+
 
     private Integer id;
 
