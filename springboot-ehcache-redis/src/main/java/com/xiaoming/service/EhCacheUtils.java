@@ -14,19 +14,28 @@ import org.springframework.stereotype.Component;
 @Component
 public class EhCacheUtils {
 
-	// @Autowired
-	// private CacheManager cacheManager;
+
 	@Autowired
 	private EhCacheCacheManager ehCacheCacheManager;
 
-	// 添加本地缓存 (相同的key 会直接覆盖)
+	/**
+	 * 添加本地缓存 (相同的key 会直接覆盖)
+	 * @param cacheName
+	 * @param key
+	 * @param value
+	 */
 	public void put(String cacheName, String key, Object value) {
 		Cache cache = ehCacheCacheManager.getCacheManager().getCache(cacheName);
 		Element element = new Element(key, value);
 		cache.put(element);
 	}
 
-	// 获取本地缓存
+	/**
+	 * 获取本地缓存
+	 * @param cacheName
+	 * @param key
+	 * @return
+	 */
 	public Object get(String cacheName, String key) {
 		Cache cache = ehCacheCacheManager.getCacheManager().getCache(cacheName);
 		Element element = cache.get(key);

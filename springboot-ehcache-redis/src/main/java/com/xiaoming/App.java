@@ -5,6 +5,11 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cache.annotation.EnableCaching;
 
+/**
+ * App
+ *
+ * @blame Android Team
+ */
 @MapperScan(basePackages = { "com.xiaoming.mapper" })
 @SpringBootApplication
 @EnableCaching

@@ -7,8 +7,10 @@ import java.lang.annotation.Target;
 
 /**
  * Redis 事务注解
+ *
  * @author xiaoming
  * @Date 2019/11/7
+ * @blame Android Team
  */
 @Target(value = ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)
