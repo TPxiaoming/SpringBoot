@@ -52,12 +52,12 @@ public class RedisService {
 
     }
 
-    @ExtRedisTranscation
+//    @ExtRedisTranscation
     public void setString(String key, Object object, Long time){
         String value = (String) object;
         stringRedisTemplate.opsForValue().set(key, value);
 
-        /*//开启事务权限
+       /* //开启事务权限
         stringRedisTemplate.setEnableTransactionSupport(true);
         //开启事务
         stringRedisTemplate.multi();
