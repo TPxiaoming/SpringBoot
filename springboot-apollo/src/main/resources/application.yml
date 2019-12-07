@@ -1,0 +1,9 @@
+server:
+  port: 8001
+spring:
+  application:
+    name: xiaoming-apl
+eureka:
+  client:
+    service-url:
+      defaultZone: http://192.168.148.133:8080/eureka
